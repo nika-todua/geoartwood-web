@@ -1,0 +1,71 @@
+.hero_inner {
+  position: relative;
+  width: 100%;
+  height: 100% !important;
+  overflow: hidden;
+
+  .mycarusel {
+    height: 100% !important;
+    height: 830px !important;
+    min-height: 550px !important;
+
+    .carousel-item {
+      width: 100% !important;
+      height: 100% !important;
+      min-height: 550px !important;
+      max-height: 830px !important;
+
+      img {
+        width: 100% !important;
+        height: 100% !important;
+        min-height: 550px !important;
+        max-height: 830px !important;
+        user-select: none;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        pointer-events: none;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .hero_inner {
+    .mycarusel {
+      height: 700px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero_inner {
+    .mycarusel {
+      height: 590px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hero_inner {
+    .mycarusel {
+      height: 100% !important;
+      max-height: 830px;
+      min-height: 480px !important;
+
+      .carousel-item {
+        width: 100% !important;
+        height: 100% !important;
+        min-height: 480px !important;
+
+        img {
+          width: 100% !important;
+          height: 100% !important;
+          min-height: 480px !important;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
