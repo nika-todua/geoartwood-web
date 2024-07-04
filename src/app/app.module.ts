@@ -8,6 +8,8 @@ import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { AboutSecComponent } from './about-sec/about-sec.component';
 import { CotageSecComponent } from './cotage-sec/cotage-sec.component';
 import { SaunaComponent } from './sauna/sauna.component';
+import { ContactSecComponent } from './contact-sec/contact-sec.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { SaunaComponent } from './sauna/sauna.component';
     HeroSectionComponent,
     AboutSecComponent,
     CotageSecComponent,
-    SaunaComponent
+    SaunaComponent,
+    ContactSecComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
