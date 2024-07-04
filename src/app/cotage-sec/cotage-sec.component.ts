@@ -11,51 +11,27 @@ export class CotageSecComponent {
   caruselarr = [
     {
       img_big: 'https://ecowood.ge/wp-content/uploads/2020/03/saxli5.jpg',
-      title: 'Premium Cottage',
-      price: '₾ 250,000',
-      bedrooms: 4,
-      bathrooms: 2,
-      area: 350
+      alt: 'Premium Cottage',
     },
     {
       img_big: 'https://ecowood.ge/wp-content/uploads/2020/03/saxli5.jpg',
-      title: 'Premium Cottage',
-      price: '₾ 250,000',
-      bedrooms: 4,
-      bathrooms: 2,
-      area: 350
+      alt: 'Premium Cottage',
     },
     {
       img_big: 'https://ecowood.ge/wp-content/uploads/2020/03/saxli5.jpg',
-      title: 'Premium Cottage',
-      price: '₾ 250,000',
-      bedrooms: 4,
-      bathrooms: 2,
-      area: 350
+      alt: 'Premium Cottage',
     },
     {
       img_big: 'https://ecowood.ge/wp-content/uploads/2020/03/saxli5.jpg',
-      title: 'Premium Cottage',
-      price: '₾ 250,000',
-      bedrooms: 4,
-      bathrooms: 2,
-      area: 350
+      alt: 'Premium Cottage',
     },
     {
       img_big: 'https://ecowood.ge/wp-content/uploads/2020/03/saxli5.jpg',
-      title: 'Premium Cottage',
-      price: '₾ 250,000',
-      bedrooms: 4,
-      bathrooms: 2,
-      area: 350
+      alt: 'Premium Cottage',
     },
     {
       img_big: 'https://ecowood.ge/wp-content/uploads/2020/03/saxli5.jpg',
-      title: 'Premium Cottage',
-      price: '₾ 250,000',
-      bedrooms: 4,
-      bathrooms: 2,
-      area: 350
+      alt: 'Premium Cottage'
     }
   ]
 

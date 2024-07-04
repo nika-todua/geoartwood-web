@@ -1,82 +1,70 @@
 @import "../variables.scss";
-*,*::after,*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;   
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.sauna_inner{
-    position: relative;
-    padding-top: 20px;
-    padding-bottom: 70px;
-    width: 100%;
-    height: auto;
+.sauna_inner {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 70px;
+  width: 100%;
+  height: auto;
 
-    &_title {
-        font-family: $font-ge;
-        font-size: 32px;
-        color: $litegreen;
-    }
+  &_title {
+    font-family: $font-ge;
+    font-size: 32px;
+    color: $litegreen;
+  }
 }
 
 .swiper {
-    margin-top: 60px;
-    width: 100%;
-    height: 500px;
+  margin-top: 60px;
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  &-slide {
+    aspect-ratio: 4/5 !important;
+    text-align: center;
+    font-size: 18px;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
 
-    &-slide {
-      aspect-ratio: 4/5 !important;
-      text-align: center;
-      font-size: 18px;
-      border-radius: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.5s ease;
+    }
 
-      &_info_cont{
-        position: absolute;
-        padding: 10px;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        display: flex;
-        align-items: start;
-        flex-direction: column;
-        justify-content: end;
-        background-color: rgba(0, 0, 0, 0.3);
-        color: $white;
-        transition: 0.5s ease;
-        z-index: 9;
-
-        h2{
-          margin-bottom: 5px;
-          font-family: $font-ge;
-          font-size: 22px;
-          color: $white;
-        }
-        P{
-          font-family: $font-ge;
-          font-size: 18px;
-          color: $white;
-        }
-      }
-      &:hover{
-        .swiper-slide_info_cont{
-          opacity: 1;
-        }
-        img{
-          transform: scale(1.1);
-        }
-      }
+    &:hover {
       img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: 0.5s ease;
+        transform: scale(1.1);
       }
     }
   }
+}
+
+@media screen and (max-width: 1023px) {
+  .swiper {
+
+    &-slide {
+
+      &:hover {
+        img {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}

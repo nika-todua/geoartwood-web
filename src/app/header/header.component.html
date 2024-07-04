@@ -6,14 +6,13 @@
 
     <nav>
       <ul class="header_inner_nav d-flex gap-3">
-        <li>მთავარი</li>
-        <li>პროდუქტი</li>
-        <li>პაკეტები</li>
-        <li>კონტაქტი</li>
+        <li (click)="homelink()">მთავარი</li>
+        <li (click)="aboutlink()">შესახებ</li>
+        <li (click)="cotagelink()">კოტეჯი</li>
+        <li (click)="contactlink()">კონტაქტი</li>
       </ul>
     </nav>
   </div>
-
 
   <!-- mobile navigation -->
 
@@ -26,10 +25,10 @@
 
     <nav class="{{navactive}} d-flex justify-content-center align-items-center">
       <ul class="header_inner_nav d-block text-center">
-        <li>მთავარი</li>
-        <li>პროდუქტი</li>
-        <li>პაკეტები</li>
-        <li>კონტაქტი</li>
+        <li (click)="homelink()">მთავარი</li>
+        <li (click)="mobaboutlink()">შესახებ</li>
+        <li (click)="mobcotagelink()">კოტეჯი</li>
+        <li (click)="mobcontactlink()">კონტაქტი</li>
       </ul>
     </nav>
     <div class="navblur {{toggleactiveclass}}"></div>

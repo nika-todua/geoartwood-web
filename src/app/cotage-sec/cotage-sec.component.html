@@ -2,33 +2,11 @@
   <h2 class="cotage_inner_title">კოტეჯები</h2>
 
 
-  <div class="swiper mySwiper-desktop-log" *ngIf="false">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" *ngFor="let data of caruselarr">
-        <div class="swiper-slide_info_cont">
-          <h2 class="price">{{ data.price }}</h2>
-          <p class="bathrooms">სველი წერტილი: {{ data.bathrooms }}</p>
-          <p class="bedrooms">საძინებელი ოთახი: {{ data.bedrooms }}</p>
-          <p class="bedrooms">ფართობი: {{ data.area }} <span>²</span> მეტრი</p>
-        </div>
-        <img [src]="data.img_big" loading="lazy" alt="ხის კოტეჯი">
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-
-
 
   <div class="swiper house-mySwiper-desktop-leg">
     <div class="swiper-wrapper">
       <div class="swiper-slide" *ngFor="let data of caruselarr">
-        <div class="swiper-slide_info_cont">
-          <h2 class="price">{{ data.price }}</h2>
-          <p class="bathrooms">სველი წერტილი: {{ data.bathrooms }}</p>
-          <p class="bedrooms">საძინებელი ოთახი: {{ data.bedrooms }}</p>
-          <p class="bedrooms">ფართობი: {{ data.area }} <span>²</span> მეტრი</p>
-        </div>
-        <img [src]="data.img_big" loading="lazy" alt="ხის კოტეჯი">
+        <img [src]="data.img_big" loading="lazy" [alt]="data.alt">
       </div>
     </div>
     <div class="swiper-pagination"></div>

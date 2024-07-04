@@ -10,32 +10,55 @@ export class SaunaComponent {
 
   saunacaruselarr = [
     {
-      img_big: 'https://i0.wp.com/bouw.ru/userfiles/229_image011.jpg',
-      price: '₾ 150,000'
+      img_big: '../../../assets/img/sauna/sauna1.jpeg'
     },
     {
-      img_big: 'https://mysaunaworld.com/cdn/shop/products/BarrelInterior_600x.png?v=1699338618',
-      price: '₾ 350,000'
+      img_big: '../../../assets/img/sauna/sauna2.jpeg'
     },
     {
-      img_big: 'https://i.pinimg.com/736x/34/21/74/342174f828617a2d804c626e4024f978.jpg',
-      price: '₾ 350,000'
+      img_big: '../../../assets/img/sauna/sauna3.jpeg'
     },
     {
-      img_big: 'https://i.pinimg.com/736x/87/3f/c3/873fc352855e29b257275cd7e1349650.jpg',
-      price: '₾ 350,000'
+      img_big: '../../../assets/img/sauna/sauna4.jpeg'
     },
     {
-      img_big: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuVWRM0mWY7PUj45blhWUe-lAl37nfC1ct4BK-v-CPIxoPiHEWSC8OBS98OAH38uini2M&usqp=CAU',
-      price: '₾ 350,000'
+      img_big: '../../../assets/img/sauna/sauna5.jpeg'
     },
     {
-      img_big: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ8jXvOCi3iReaywZd1Vqbz-3-fEr2nr-vF7tDioHVphqVgh7n2onKPyWvJ7-WYX4loW4&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ8jXvOCi3iReaywZd1Vqbz-3-fEr2nr-vF7tDioHVphqVgh7n2onKPyWvJ7-WYX4loW4&usqp=CAU',
-      price: '₾ 350,000'
+      img_big: '../../../assets/img/sauna/sauna6.jpeg'
     },
     {
-      img_big: 'https://nativesauna.com/cdn/shop/files/auroom-baia-diy-sauna-kit-interior-2.jpg?v=1694401322&width=540',
-      price: '₾ 350,000'
+      img_big: '../../../assets/img/sauna/sauna7.jpeg'
+    },
+    {
+      img_big: '../../../assets/img/sauna/sauna8.jpeg'
+    },
+    {
+      img_big: '../../../assets/img/sauna/sauna9.jpeg'
+    },
+    {
+      img_big: '../../../assets/img/sauna/sauna10.jpeg'
+    },
+    {
+      img_big: '../../../assets/img/sauna/sauna11.jpeg'
+    },
+    {
+      img_big: '../../../assets/img/sauna/sauna12.jpeg'
+    },
+    {
+      img_big: '../../../assets/img/sauna/sauna13.jpeg'
+    },
+    {
+      img_big: '../../../assets/img/sauna/sauna14.jpeg'
+    },
+    {
+      img_big: '../../../assets/img/sauna/sauna15.jpeg'
+    },
+    {
+      img_big: '../../../assets/img/sauna/sauna16.jpeg'
+    },
+    {
+      img_big: '../../../assets/img/sauna/sauna17.jpeg'
     }
   ]
 
