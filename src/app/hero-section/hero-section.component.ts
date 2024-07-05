@@ -29,17 +29,17 @@ export class HeroSectionComponent {
       alt: 'Image 3'
     },
     {
+      img: '../../../assets/img/kotejebi/u4YOdnFmSAW3fykeggTtjvZb8q1Zs5AczOC2MhFB.jpg',
+      class: '',
+      alt: 'Image 3'
+    },
+    {
       img: '../../../assets/img/sauna/sauna10.jpeg',
       class: '',
       alt: 'Image 3'
     },
     {
       img: '../../../assets/img/sauna/sauna2.jpeg',
-      class: '',
-      alt: 'Image 3'
-    },
-    {
-      img: '../../../assets/img/sauna/sauna12.jpeg',
       class: '',
       alt: 'Image 3'
     }

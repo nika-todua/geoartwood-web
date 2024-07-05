@@ -10,34 +10,27 @@ export class CotageSecComponent {
 
   caruselarr = [
     {
-      img_big: 'https://ecowood.ge/wp-content/uploads/2020/03/saxli5.jpg',
-      alt: 'Premium Cottage',
+      img_big: '../../../assets/img/kotejebi/koteji1.webp',
+      alt: 'Cottage 1',
     },
     {
-      img_big: 'https://ecowood.ge/wp-content/uploads/2020/03/saxli5.jpg',
-      alt: 'Premium Cottage',
+      img_big: '../../../assets/img/kotejebi/koteji2.webp',
+      alt: 'Cottage 2',
     },
     {
-      img_big: 'https://ecowood.ge/wp-content/uploads/2020/03/saxli5.jpg',
-      alt: 'Premium Cottage',
+      img_big: '../../../assets/img/kotejebi/koteji3.webp',
+      alt: 'Cottage 3',
     },
     {
-      img_big: 'https://ecowood.ge/wp-content/uploads/2020/03/saxli5.jpg',
-      alt: 'Premium Cottage',
+      img_big: '../../../assets/img/kotejebi/koteji4.webp',
+      alt: 'Cottage 4',
     },
     {
-      img_big: 'https://ecowood.ge/wp-content/uploads/2020/03/saxli5.jpg',
-      alt: 'Premium Cottage',
-    },
-    {
-      img_big: 'https://ecowood.ge/wp-content/uploads/2020/03/saxli5.jpg',
-      alt: 'Premium Cottage'
+      img_big: '../../../assets/img/kotejebi/u4YOdnFmSAW3fykeggTtjvZb8q1Zs5AczOC2MhFB.jpg',
+      alt: 'Cottage 5',
     }
   ]
 
-  
-  
-  
   ngOnInit(){
 
     var swiper = new Swiper(".house-mySwiper-desktop-leg", {
