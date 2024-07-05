@@ -63,11 +63,11 @@ export class CotageSecComponent {
         "@1.50": {
           slidesPerView: 4,
           spaceBetween: 40,
-        },
+        }
       },
     });
   }
 }
 interface OnInit {
   ngOnInit(): void
-  }
+}
