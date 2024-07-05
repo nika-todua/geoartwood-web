@@ -3,7 +3,7 @@
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner mycarusel">
           <div *ngFor="let data of herosecimgArr" class="carousel-item {{data.class}}">
-            <img [src]="data.img" class="d-block w-100" [alt]="data.alt">
+            <img [src]="data.img" class="d-block w-100" loading="lazy" [alt]="data.alt">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

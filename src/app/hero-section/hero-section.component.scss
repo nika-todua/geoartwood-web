@@ -38,6 +38,15 @@
   .hero_inner {
     .mycarusel {
       height: 700px !important;
+
+      .carousel-item {
+        max-height: 700px !important;
+
+        img {
+          min-height: 700px !important;
+          max-height: 700px !important;
+        }
+      }
     }
   }
 }
@@ -46,6 +55,16 @@
   .hero_inner {
     .mycarusel {
       height: 590px !important;
+
+      .carousel-item {
+        max-height: 590px !important;
+
+        img {
+          min-height: 590px !important;
+          max-height: 590px !important;
+        }
+      }
+      
     }
   }
 }
@@ -54,17 +73,18 @@
   .hero_inner {
     .mycarusel {
       height: 100% !important;
-      max-height: 830px;
+      height: 480px !important;
+      max-height: 480px !important;
       min-height: 480px !important;
 
       .carousel-item {
         width: 100% !important;
-        height: 100% !important;
+        height: 480px !important;
         min-height: 480px !important;
 
         img {
           width: 100% !important;
-          height: 100% !important;
+          height: 480px !important;
           min-height: 480px !important;
           object-fit: cover;
         }

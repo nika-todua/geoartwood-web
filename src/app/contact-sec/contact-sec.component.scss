@@ -75,7 +75,11 @@
       }
 
       &:nth-child(2) {
-        max-width: 740px;
+        width: 60%;
+        max-width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         iframe {
           margin: 0;
@@ -84,6 +88,7 @@
           min-width: 500px;
           max-width: 800px;
           height: 500px;
+          user-select: none;
         }
       }
     }
@@ -110,6 +115,7 @@
 
         &:nth-child(2) {
           margin-top: 50px;
+          width: 100%;
           max-width: none;
 
           iframe {

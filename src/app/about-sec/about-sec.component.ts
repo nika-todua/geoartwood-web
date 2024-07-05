@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './about-sec.component.scss'
 })
 export class AboutSecComponent {
-  telnumber:number = 599587064
+  
 }
