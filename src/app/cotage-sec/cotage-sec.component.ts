@@ -28,6 +28,14 @@ export class CotageSecComponent {
     {
       img_big: '../../../assets/img/kotejebi/u4YOdnFmSAW3fykeggTtjvZb8q1Zs5AczOC2MhFB.jpg',
       alt: 'Cottage 5',
+    },
+    {
+      img_big: '../../../assets/img/kotejebi/koteji5.jpg',
+      alt: 'Cottage 6',
+    },
+    {
+      img_big: '../../../assets/img/kotejebi/koteji6.jpg',
+      alt: 'Cottage 7',
     }
   ]
 
