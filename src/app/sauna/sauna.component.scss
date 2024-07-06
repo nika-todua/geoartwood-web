@@ -77,3 +77,19 @@
     }
   }
 }
+
+@media screen  and (max-width: 859px){
+  .swiper {
+    max-height: 435px !important;
+
+    &-slide {
+
+      &:hover {
+        img {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+  
+}

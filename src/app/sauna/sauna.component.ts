@@ -7,7 +7,20 @@ import { Component } from '@angular/core';
   styleUrl: './sauna.component.scss'
 })
 export class SaunaComponent {
+  shuffle(array:any) {
+    let currentIndex = array.length,  randomIndex;
+    while (currentIndex > 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+      [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+    }
+    return array;
+  }
+  
   ngOnInit(){
+    
+    this.shuffle(this.saunacaruselarr);
+
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 10,

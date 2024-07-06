@@ -9,24 +9,19 @@
 }
 
 .about_inner {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   width: 100%;
   height: auto;
-
+  
   .content {
     position: relative;
     width: 100%;
     height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: start;
 
     .img_sec {
-      position: relative;
       width: 370px;
       aspect-ratio: 4/5;
-      margin-right: 50px;
       overflow: hidden;
 
       img {
@@ -80,10 +75,11 @@
       justify-content: center;
 
       .img_sec {
-        margin: 0;
+        margin: 0 auto !important;
       }
 
       .text_sec {
+        margin: 0 auto !important;
         max-width: 590px;
         width: 100%;
         text-align: center;
