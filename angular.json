@@ -39,9 +39,9 @@
               }
             ],
             "styles": [
-              "public/assets/font/geo-font/css/bpg-nino-mtavruli-bold.min.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/swiper/swiper-bundle.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "public/assets/font/geo-font/css/bpg-nino-mtavruli-bold.min.css",
               "src/styles.scss"
             ],
             "scripts": [

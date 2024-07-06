@@ -3,11 +3,9 @@
 
   <div class="swiper sauna-mySwiper-desktop-log">
     <div class="swiper-wrapper">
-      <div class="swiper-slide" *ngFor="let data of saunacaruselarr">
-        <img [src]="data.img_big" loading="lazy" alt="საუნა">
-      </div>
+      <div *ngFor="let data of saunacaruselarr" class="swiper-slide"> <img [src]="data.img_big" loading="lazy" alt="საუნა"> </div>
     </div>
-    <div class="swiper-pagination"></div>
+    <div class="swiper-pagination d-none"></div>
   </div>
 
 

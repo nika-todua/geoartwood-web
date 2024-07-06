@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
 import Swiper from 'swiper';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-cotage-sec',
@@ -7,6 +7,39 @@ import Swiper from 'swiper';
   styleUrl: './cotage-sec.component.scss'
 })
 export class CotageSecComponent {
+  
+  ngOnInit(){
+    var swiper = new Swiper(".house-mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 40,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: false,
+      },
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        "@0.75": {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        "@1.00": {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        "@1.50": {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        }
+      },
+    });
+    
+    
+    
+  }
+  
 
   caruselarr = [
     {
@@ -37,37 +70,9 @@ export class CotageSecComponent {
       img_big: '../../../assets/img/kotejebi/koteji6.jpg',
       alt: 'Cottage 7',
     }
+
   ]
-
-  ngOnInit(){
-
-    var swiper = new Swiper(".house-mySwiper-desktop-leg", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: false,
-      },
-      breakpoints: {
-        "@0.00": {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        "@0.75": {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        "@1.00": {
-          slidesPerView: 3,
-          spaceBetween: 40,
-        },
-        "@1.50": {
-          slidesPerView: 4,
-          spaceBetween: 40,
-        }
-      },
-    });
-  }
+  
 }
 interface OnInit {
   ngOnInit(): void

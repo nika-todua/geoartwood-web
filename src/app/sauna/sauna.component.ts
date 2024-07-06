@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
 import Swiper from 'swiper';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-sauna',
@@ -7,6 +7,34 @@ import Swiper from 'swiper';
   styleUrl: './sauna.component.scss'
 })
 export class SaunaComponent {
+  ngOnInit(){
+    var swiper = new Swiper(".sauna-mySwiper-desktop-log", {
+      slidesPerView: 4,
+      spaceBetween: 40,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: false,
+      },
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        "@0.75": {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        "@1.00": {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        "@1.50": {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
+    });
+  }
 
   saunacaruselarr = [
     {
@@ -61,36 +89,6 @@ export class SaunaComponent {
       img_big: '../../../assets/img/sauna/sauna17.jpeg'
     }
   ]
-
-  
-  ngOnInit(){
-    var swiper = new Swiper(".sauna-mySwiper-desktop-log", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: false,
-      },
-      breakpoints: {
-        "@0.00": {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        "@0.75": {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        "@1.00": {
-          slidesPerView: 3,
-          spaceBetween: 40,
-        },
-        "@1.50": {
-          slidesPerView: 4,
-          spaceBetween: 40,
-        },
-      },
-    });
-  }
 }
 interface OnInit {
   ngOnInit(): void

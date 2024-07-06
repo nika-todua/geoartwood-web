@@ -89,16 +89,34 @@
         text-align: center;
 
         .sec_title {
-          font-size: 36px;
+          font-size: 32px;
         }
 
         .sec_text {
           width: 100%;
-          font-size: 20px;
+          font-size: 18px;
         }
 
         .contact-btn {
-          font-size: 20px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about_inner {
+    .content {
+      gap: 40px;
+
+      .text_sec {
+        .sec_title {
+          font-size: 30px;
+        }
+
+        .sec_text {
+          font-size: 16px;
         }
       }
     }
