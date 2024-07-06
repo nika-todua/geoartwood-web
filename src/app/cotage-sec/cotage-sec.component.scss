@@ -11,8 +11,9 @@
 .cotage_inner {
   position: relative;
   padding-top: 20px;
+  padding-bottom: 70px;
   width: 100%;
-  height: 800px;
+  height: auto;
 
   &_title {
     font-family: $font-ge;
@@ -21,9 +22,12 @@
   }
 
   .swiper {
-    margin-top: 100px;
-    width: 100%;
+    margin: 60px auto 0 auto;
+    width: 97.8%;
     height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
     border-radius: 10px;
     overflow: hidden;
 
@@ -36,7 +40,11 @@
       justify-content: center;
       align-items: center;
       overflow: hidden;
+      cursor:grab;
 
+      &:active {
+        cursor:grabbing;
+      }
       &:hover {
         img {
           transform: scale(1.1);

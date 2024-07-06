@@ -5,10 +5,7 @@
     <div class="mycaruselcottage swiper-wrapper">
       <div *ngFor="let data of caruselarr" class="swiper-slide"> <img [src]="data.img_big" loading="lazy" [alt]="data.alt"> </div>
     </div>
-    <div class="swiper-pagination d-none"></div>
+    <div class="swiper-pagination" style="pointer-events: none; opacity: 0; visibility: hidden;"></div>
   </div>
-  
-  
-  
   
 </section>

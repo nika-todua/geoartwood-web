@@ -10,34 +10,29 @@ export class CotageSecComponent {
   
   ngOnInit(){
     var swiper = new Swiper(".house-mySwiper", {
-      slidesPerView: 4,
-      spaceBetween: 40,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      freeMode: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: false,
       },
       breakpoints: {
-        "@0.00": {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        "@0.75": {
+        600: {
           slidesPerView: 2,
-          spaceBetween: 20,
+          spaceBetween: 15,
         },
-        "@1.00": {
+        860: {
           slidesPerView: 3,
-          spaceBetween: 30,
+          spaceBetween: 25,
         },
-        "@1.50": {
+        1190: {
           slidesPerView: 4,
           spaceBetween: 30,
         }
       },
     });
-    
-    
-    
+
   }
   
 
@@ -70,7 +65,6 @@ export class CotageSecComponent {
       img_big: '../../../assets/img/kotejebi/koteji6.jpg',
       alt: 'Cottage 7',
     }
-
   ]
   
 }

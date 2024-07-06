@@ -23,12 +23,15 @@
 }
 
 .swiper {
-  margin-top: 60px;
-  width: 100%;
+  margin: 60px auto 0 auto;
+  width: 97.8%;
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
-
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  
   &-slide {
     aspect-ratio: 4/5 !important;
     text-align: center;
@@ -38,6 +41,11 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    cursor:grab;
+
+      &:active {
+      cursor:grabbing;
+      }
 
     img {
       display: block;

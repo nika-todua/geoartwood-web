@@ -8,32 +8,30 @@ import { Component } from '@angular/core';
 })
 export class SaunaComponent {
   ngOnInit(){
-    var swiper = new Swiper(".sauna-mySwiper-desktop-log", {
-      slidesPerView: 4,
-      spaceBetween: 40,
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      freeMode: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: false,
       },
       breakpoints: {
-        "@0.00": {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        "@0.75": {
+        600: {
           slidesPerView: 2,
-          spaceBetween: 20,
+          spaceBetween: 15,
         },
-        "@1.00": {
+        860: {
           slidesPerView: 3,
-          spaceBetween: 30,
+          spaceBetween: 25,
         },
-        "@1.50": {
+        1190: {
           slidesPerView: 4,
           spaceBetween: 30,
-        },
+        }
       },
     });
+    
   }
 
   saunacaruselarr = [
