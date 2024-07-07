@@ -9,10 +9,8 @@
 }
 
 .sauna_inner {
-  position: relative;
   padding-top: 20px;
   padding-bottom: 70px;
-  width: 100%;
   height: auto;
 
   &_title {
@@ -26,32 +24,21 @@
   margin: 60px auto 0 auto;
   width: 97.8%;
   height: 500px;
-  border-radius: 10px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  
+
   &-slide {
-    aspect-ratio: 4/5 !important;
+    aspect-ratio: 4/5;
     text-align: center;
     font-size: 18px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
-    cursor:grab;
+    cursor: grab;
 
-      &:active {
-      cursor:grabbing;
-      }
+    &:active {
+      cursor: grabbing;
+    }
 
     img {
-      display: block;
-      width: 100%;
       height: 100%;
-      object-fit: cover;
       transition: 0.5s ease;
       user-select: none;
     }
@@ -78,7 +65,7 @@
   }
 }
 
-@media screen  and (max-width: 859px){
+@media screen and (max-width: 859px) {
   .swiper {
     max-height: 435px !important;
 
@@ -91,5 +78,5 @@
       }
     }
   }
-  
+
 }
