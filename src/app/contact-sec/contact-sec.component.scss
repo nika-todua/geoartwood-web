@@ -22,12 +22,7 @@
 
   &_content {
     margin-top: 50px;
-    width: 100%;
     height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     aside {
       width: fit-content;
 
@@ -43,8 +38,8 @@
           .icon {
             position: relative;
             width: 60px;
-            height: 60px;
-            border-radius: 15px;
+            aspect-ratio: 1/1;
+            height: auto;
             background-color: $blue;
 
             svg {
@@ -61,14 +56,14 @@
           }
 
           .title {
+            font-family: $font-ge;
             font-size: 18px;
             color: rgb(160, 160, 160);
-            font-family: $font-ge;
           }
 
           p {
-            font-size: 20px;
             font-family: $font-ge;
+            font-size: 20px;
             color: $white;
           }
         }
@@ -77,14 +72,10 @@
       &:nth-child(2) {
         width: 60%;
         max-width: 800px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
 
         iframe {
           margin: 0;
           padding: 0;
-          width: 100%;
           min-width: 500px;
           max-width: 800px;
           height: 500px;
@@ -146,7 +137,9 @@
           &_box {
             .icon {
               width: 50px;
-              height: 50px;
+              height: auto;
+              min-width: 50px;
+              min-height: 50px;
 
               svg {
                 width: 22px;

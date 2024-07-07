@@ -1,8 +1,7 @@
 <div class="header_inner d-flex justify-content-between align-items-center">
 
   <div class="desktop-nav w-100 d-flex justify-content-between align-items-center">
-
-    <a class="header_inner_link" style="cursor: pointer;" (click)="homelink()"><img class="pe-none" src="../../../assets/img/geoartwood_logo.webp" loading="lazy" alt="logo"></a>
+    <a class="header_inner_link" style="cursor: pointer;" (click)="homelink()">Todwood</a>
 
     <nav>
       <ul class="header_inner_nav d-flex gap-3">
@@ -17,13 +16,13 @@
   <!-- mobile navigation -->
 
   <div class="mob-nav w-100 d-flex justify-content-between align-items-center">
-    <a href="#" class="header_inner_link"><img src="../../../assets/img/geoartwood_logo.webp" loading="lazy" alt="logo"></a>
+    <a class="header_inner_link" style="cursor: pointer;" (click)="homelink()">Todwood</a>
 
-    <div class="toggle_btn {{toggleactiveclass}} d-flex justify-content-center align-items-center" (click)="toggleMenu()">
-        <div></div>
+    <div class="toggle_btn {{ toggleactiveclass }} d-flex justify-content-center align-items-center" (click)="toggleMenu()">
+      <div></div>
     </div>
 
-    <nav class="{{navactive}} d-flex justify-content-center align-items-center">
+    <nav class="{{ navactive }} d-flex justify-content-center align-items-center">
       <ul class="header_inner_nav d-block text-center">
         <li (click)="homelink()">მთავარი</li>
         <li (click)="mobaboutlink()">შესახებ</li>
@@ -31,8 +30,7 @@
         <li (click)="mobcontactlink()">კონტაქტი</li>
       </ul>
     </nav>
-    <div class="navblur {{toggleactiveclass}}"></div>
-</div>
-
+    <div class="navblur {{ toggleactiveclass }}"></div>
+  </div>
 
 </div>

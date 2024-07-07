@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './about-sec.component.scss'
 })
 export class AboutSecComponent {
+
+  abouttxt:string = 'გვაქვს 25 წლიანი გამოცდილება,საქმეს ვეკიდებით სრული პროფესიონალიზმით.გვაქვს ბევრი წარმატებული პროექტი შესრულებული.ჩვენთან კმაყოფილი დარჩებით.'
   
 }

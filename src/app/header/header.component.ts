@@ -51,13 +51,13 @@ export class HeaderComponent {
 
   // mobile
   mobaboutlink(){
-    window.scrollTo({top: 600, behavior: 'smooth' });
+    window.scrollTo({top: 500, behavior: 'smooth' });
     document.querySelector("body")?.classList.remove("no-scroll")
     this.toggleactiveclass = "";
     this.navactive = "";
   }
   mobcotagelink(){
-    window.scrollTo({top: 1620, behavior: 'smooth' });
+    window.scrollTo({top: 1320, behavior: 'smooth' });
     document.querySelector("body")?.classList.remove("no-scroll")
     this.toggleactiveclass = "";
     this.navactive = "";
