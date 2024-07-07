@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import Swiper from 'swiper';
+import { Swiper } from 'swiper';
 
 @Component({
   selector: 'app-cotage-sec',
@@ -7,7 +7,7 @@ import Swiper from 'swiper';
   styleUrl: './cotage-sec.component.scss'
 })
 export class CotageSecComponent {
-  
+
   shuffle(array:any) {
     let currentIndex = array.length,  randomIndex;
     while (currentIndex > 0) {
@@ -20,10 +20,11 @@ export class CotageSecComponent {
   
   ngOnInit(){
     
+    this.shuffle(this.caruselarr);
+    
     var swiper = new Swiper(".house-mySwiper", {
       slidesPerView: 1,
       spaceBetween: 10,
-      freeMode: true,
       breakpoints: {
         600: {
           slidesPerView: 2,
@@ -40,7 +41,7 @@ export class CotageSecComponent {
       },
     });
 
-    this.shuffle(this.caruselarr);
+
   }
   
   

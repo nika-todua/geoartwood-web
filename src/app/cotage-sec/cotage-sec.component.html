@@ -1,11 +1,19 @@
 <section class="cotage_inner position-relative w-100">
   <h2 class="cotage_inner_title">კოტეჯები</h2>
 
-  <div class="swiper house-mySwiper rounded-3 d-flex justify-content-start align-item-center position-relative">
-    <div class="mycaruselcottage swiper-wrapper">
-      <div *ngFor="let data of caruselarr" class="swiper-slide d-flex justify-content-center align-item-center rounded-3"> <img [src]="data.img_big" class="w-100 d-block object-fit-cover" loading="lazy" [alt]="data.alt"> </div>
+  <div class="arrews" *ngIf="false">
+    <!-- TODO რომ განახლდება swiper js მაშინ უნდა დავამატო ეს დივი <3 -->
+    <label for="nextarrew" class="d-flex justify-content-center align-items-center">L</label>
+    <label for="prevarrew" class="d-flex justify-content-center align-items-center">R</label>
+  </div>
+  
+  <div class="swiper house-mySwiper rounded-3 d-flex justify-content-start align-items-center position-relative">
+    <div class="swiper-wrapper mycaruselcottage">
+      <div *ngFor="let data of caruselarr" class="d-flex justify-content-center align-item-center rounded-3 swiper-slide">
+        <img [src]="data.img_big" class="w-100 d-block object-fit-cover" loading="lazy" [alt]="data.alt">
+      </div>
     </div>
-    <div class="swiper-pagination" style="pointer-events: none; opacity: 0; visibility: hidden;"></div>
+    
   </div>
   
 </section>
