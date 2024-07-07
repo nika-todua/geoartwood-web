@@ -1,5 +1,5 @@
-import Swiper from 'swiper';
 import { Component } from '@angular/core';
+import Swiper from 'swiper';
 
 @Component({
   selector: 'app-cotage-sec',
@@ -19,16 +19,11 @@ export class CotageSecComponent {
   }
   
   ngOnInit(){
-    this.shuffle(this.caruselarr);
-
+    
     var swiper = new Swiper(".house-mySwiper", {
       slidesPerView: 1,
       spaceBetween: 10,
       freeMode: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: false,
-      },
       breakpoints: {
         600: {
           slidesPerView: 2,
@@ -45,9 +40,10 @@ export class CotageSecComponent {
       },
     });
 
+    this.shuffle(this.caruselarr);
   }
   
-
+  
   caruselarr = [
     {
       img_big: '../../../assets/img/kotejebi/koteji1.webp',

@@ -7,7 +7,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .cotage_inner {
   position: relative;
   padding-top: 20px;
@@ -22,6 +21,7 @@
   }
 
   .swiper {
+    position: relative;
     margin: 60px auto 0 auto;
     width: 97.8%;
     height: 500px;
@@ -36,6 +36,7 @@
       text-align: center;
       font-size: 18px;
       border-radius: 10px;
+      background-color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;

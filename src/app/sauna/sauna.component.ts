@@ -25,10 +25,6 @@ export class SaunaComponent {
       slidesPerView: 1,
       spaceBetween: 10,
       freeMode: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: false,
-      },
       breakpoints: {
         600: {
           slidesPerView: 2,
