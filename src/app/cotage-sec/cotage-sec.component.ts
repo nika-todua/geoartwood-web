@@ -25,6 +25,10 @@ export class CotageSecComponent {
     var swiper = new Swiper(".house-mySwiper", {
       slidesPerView: 1,
       spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
       breakpoints: {
         600: {
           slidesPerView: 2,
@@ -40,7 +44,6 @@ export class CotageSecComponent {
         }
       },
     });
-
 
   }
   
