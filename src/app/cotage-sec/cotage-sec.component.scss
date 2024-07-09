@@ -8,21 +8,21 @@
   box-sizing: border-box;
 }
 .arrews{
-  position: absolute;
-  margin-top: 20px;
-  right: 20px;
   width: fit-content;
   height: 40px;
-  display: flex;
-  gap: 10px;
-  z-index: 99;
-
-  label{
+  
+  div{
+    background-color: green;
+    top: 0;
+    left: 0;
     width: 40px;
     height: 40px;
-    background-color: green;
-    cursor: pointer;
-    user-select: none;
+
+    &::after{
+      position: absolute !important;
+      pointer-events: none !important;
+      opacity: 0 !important;
+    }
     
     svg{
       display: block;
@@ -45,7 +45,7 @@
   }
 
   .swiper {
-    margin: 60px auto 0 auto;
+    margin: 63px auto 0 auto;
     width: 97.8%;
     height: 500px;
     overflow: hidden;

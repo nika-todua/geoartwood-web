@@ -22,12 +22,12 @@ export class CotageSecComponent {
     
     this.shuffle(this.caruselarr);
     
-    var swiper = new Swiper(".house-mySwiper", {
+    var swiper = new Swiper(".house-mySwiper-carusel", {
       slidesPerView: 1,
       spaceBetween: 10,
       navigation: {
-        nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
       },
       breakpoints: {
         600: {
