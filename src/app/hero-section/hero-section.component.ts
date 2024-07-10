@@ -6,11 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './hero-section.component.scss'
 })
 export class HeroSectionComponent {
-  
   herosecimgArr = [
     {
       img: '../../../assets/img/sauna/sauna1.jpeg',
-      class: 'active',
+      class: '',
       alt: 'Image 1'
     },
     {
@@ -42,7 +41,34 @@ export class HeroSectionComponent {
       img: '../../../assets/img/sauna/sauna2.jpeg',
       class: '',
       alt: 'Image 7'
+    },
+    {
+      img: '../../../assets/img/kotejebi/koteji2.webp',
+      class: '',
+      alt: 'Image 9'
+    },
+    {
+      img: '../../../assets/img/sauna/sauna17.jpeg',
+      class: '',
+      alt: 'Image 10'
     }
-  ]
+  ];
+
+  randnum:number = Math.floor(Math.random() * (this.herosecimgArr.length - 0) + 0)
+  
+  shuffle(array:any) {
+    let currentIndex = array.length,  randomIndex;
+    while (currentIndex > 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+      [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+    }
+    return array;
+  }
+
+  ngOnInit(){
+    this.shuffle(this.herosecimgArr);
+    this.herosecimgArr[this.randnum].class = "active";
+  }
 
 }

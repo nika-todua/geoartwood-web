@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 .hero_inner {
   position: relative;
   width: 100%;
@@ -32,6 +34,43 @@
       }
     }
   }
+
+  .mtcaruselBtn {
+    opacity: 1 !important;
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0.075);
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 50%;
+
+    transition: 0.1s linear;
+
+    &:nth-child(2) {
+      margin-left: 5%;
+    }
+
+    &:nth-child(3) {
+      margin-right: 5%;
+    }
+
+    .myArrow {
+      opacity: 0.8 !important;
+
+      svg {
+        fill: $liteblue !important;
+      }
+    }
+
+    &:hover {
+      backdrop-filter: blur(4px);
+
+      .myArrow {
+        opacity: 1 !important;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -48,7 +87,46 @@
         }
       }
     }
+
+    .mtcaruselBtn {
+      backdrop-filter: blur(10px) !important;
+
+      .myArrow {
+        opacity: 1 !important;
+      }
+
+      &:hover {
+        backdrop-filter: blur(10px) !important;
+
+        .myArrow {
+          opacity: 1 !important;
+        }
+      }
+    }
   }
+}
+
+@media screen and (max-width: 890px) {
+  .mtcaruselBtn {
+    width: 40px !important;
+    height: 40px !important;
+
+    &:nth-child(2) {
+      margin-left: 3% !important;
+    }
+
+    &:nth-child(3) {
+      margin-right: 3% !important;
+    }
+
+    .myArrow {
+      svg {
+        width: 96% !important;
+        height: 96% !important;
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -64,7 +142,7 @@
           max-height: 590px !important;
         }
       }
-      
+
     }
   }
 }
