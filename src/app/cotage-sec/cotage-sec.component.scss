@@ -20,8 +20,8 @@
 
     &::after{
       position: absolute !important;
-      pointer-events: none !important;
       opacity: 0 !important;
+      z-index: 88;
     }
     
     svg{
