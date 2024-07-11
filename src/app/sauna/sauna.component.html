@@ -1,7 +1,7 @@
 <section class="sauna_inner position-relative w-100">
   <h2 class="sauna_inner_title">საუნები</h2>
 
-  <div class="arrews mt-4 d-flex position-absolute grid gap-2 end-0" style="margin-right: 13px;" *ngIf="false">
+  <div class="arrews mt-4 d-flex position-absolute grid gap-2 end-0" style="margin-right: 13px;" *ngIf="true">
     <!-- TODO რომ განახლდება swiper js მაშინ უნდა დავამატო ეს დივი <3 -->
       <div class="swiper-button-prev position-relative user-select-none overflow-hidden d-flex justify-content-center align-items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.939 4.939 6.879 12l7.06 7.061 2.122-2.122L11.121 12l4.94-4.939z"></path></svg>
@@ -13,8 +13,8 @@
   
   <div class="swiper mySwiper rounded-3 d-flex justify-content-start align-item-center position-relative">
     <div class="swiper-wrapper">
-      <div *ngFor="let data of saunacaruselarr" class="swiper-slide d-flex justify-content-center align-item-center rounded-3">
-        <img [src]="data.img_big" class="w-100 d-block object-fit-cover" loading="lazy" alt="საუნა">
+      <div *ngFor="let data of saunacaruselarr" class="swiper-slide d-flex justify-contents-center align-items-center rounded-3" style="color: aliceblue;">
+        <img [src]="data.img_big" class="w-100 d-block object-fit-cover" loading="lazy" [alt]="data.imgalt">
       </div>
       <div class="swiper-button-next" id="nextarrew" *ngIf="false"></div>
       <div class="swiper-button-prev" id="prevarrew" *ngIf="false"></div>

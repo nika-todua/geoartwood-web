@@ -48,55 +48,76 @@ export class SaunaComponent {
 
   saunacaruselarr = [
     {
-      img_big: '../../../assets/img/sauna/sauna1.jpeg'
+      img_big: '../../../assets/img/sauna/sauna1.jpeg',
+      imgalt: 'sauna 1'
     },
     {
-      img_big: '../../../assets/img/sauna/sauna2.jpeg'
+      img_big: '../../../assets/img/sauna/sauna2.jpeg',
+      imgalt: 'sauna 2'
     },
     {
-      img_big: '../../../assets/img/sauna/sauna3.jpeg'
+      img_big: '../../../assets/img/sauna/sauna3.jpeg',
+      imgalt: 'sauna 3'
     },
     {
-      img_big: '../../../assets/img/sauna/sauna4.jpeg'
+      img_big: '../../../assets/img/sauna/sauna4.jpeg',
+      imgalt: 'sauna 4'
     },
     {
-      img_big: '../../../assets/img/sauna/sauna5.jpeg'
+      img_big: '../../../assets/img/sauna/sauna5.jpeg',
+      imgalt: 'sauna 5'
     },
     {
-      img_big: '../../../assets/img/sauna/sauna6.jpeg'
+      img_big: '../../../assets/img/sauna/sauna6.jpeg',
+      imgalt: 'sauna 6'
     },
     {
-      img_big: '../../../assets/img/sauna/sauna7.jpeg'
+      img_big: '../../../assets/img/sauna/sauna7.jpeg',
+      imgalt: 'sauna 7'
     },
     {
-      img_big: '../../../assets/img/sauna/sauna8.jpeg'
+      img_big: '../../../assets/img/sauna/sauna8.jpeg',
+      imgalt: 'sauna 8'
     },
     {
-      img_big: '../../../assets/img/sauna/sauna9.jpeg'
+      img_big: '../../../assets/img/sauna/sauna9.jpeg',
+      imgalt: 'sauna 9'
     },
     {
-      img_big: '../../../assets/img/sauna/sauna10.jpeg'
+      img_big: '../../../assets/img/sauna/sauna10.jpeg',
+      imgalt: 'sauna 10'
     },
     {
-      img_big: '../../../assets/img/sauna/sauna11.jpeg'
+      img_big: '../../../assets/img/sauna/sauna11.jpeg',
+      imgalt: 'sauna 11'
     },
     {
-      img_big: '../../../assets/img/sauna/sauna12.jpeg'
+      img_big: '../../../assets/img/sauna/sauna12.jpeg',
+      imgalt: 'sauna 12'
     },
     {
-      img_big: '../../../assets/img/sauna/sauna13.jpeg'
+      img_big: '../../../assets/img/sauna/sauna13.jpeg',
+      imgalt: 'sauna 13'
     },
     {
-      img_big: '../../../assets/img/sauna/sauna14.jpeg'
+      img_big: '../../../assets/img/sauna/sauna14.jpeg',
+      imgalt: 'sauna 14'
     },
     {
-      img_big: '../../../assets/img/sauna/sauna15.jpeg'
+      img_big: '../../../assets/img/sauna/sauna15.jpeg',
+      imgalt: 'sauna 15'
     },
     {
-      img_big: '../../../assets/img/sauna/sauna16.jpeg'
+      img_big: '../../../assets/img/sauna/sauna16.jpeg',
+      imgalt: 'sauna 16'
     },
     {
-      img_big: '../../../assets/img/sauna/sauna17.jpeg'
+      img_big: '../../../assets/img/sauna/sauna17.jpeg',
+      imgalt: 'sauna 17'
+    },
+    {
+      img_big: '../../../assets/img/sauna/sauna18.jpg',
+      imgalt: 'sauna 18'
     }
   ]
 }
