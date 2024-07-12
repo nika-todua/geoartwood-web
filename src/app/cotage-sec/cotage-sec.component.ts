@@ -30,17 +30,21 @@ export class CotageSecComponent {
         nextEl: ".swiper-button-next",
       },
       breakpoints: {
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 12.5,
+        },
         600: {
           slidesPerView: 2,
           spaceBetween: 15,
         },
-        860: {
+        810: {
           slidesPerView: 3,
           spaceBetween: 25,
         },
-        1190: {
+        1200: {
           slidesPerView: 4,
-          spaceBetween: 30,
+          spaceBetween: 25,
         }
       },
     });

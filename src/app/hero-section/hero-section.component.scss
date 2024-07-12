@@ -37,37 +37,54 @@
 
   .mtcaruselBtn {
     opacity: 1 !important;
-    width: 48px;
-    height: 48px;
+    width: 35px;
+    height: 35px;
     margin: auto;
-    backdrop-filter: blur(1px);
-    background-color: rgba(255, 255, 255, 0.075);
-    border: 1px solid rgb(151, 151, 151);
-    border-radius: 50%;
+    transform: rotate(45deg);
+    background-color: $liteblue;
+    border-radius: 3px !important;
 
     transition: 0.1s linear;
+    overflow: hidden;
+
+    &:hover {
+      background-color: #0b5ed7;
+    }
+    span{
+      pointer-events: none !important;
+    }
 
     &:nth-child(2) {
       margin-left: 5%;
+
+      .myArrow {
+        svg {
+          transform: rotate(-45deg);
+        }
+      }
     }
 
     &:nth-child(3) {
       margin-right: 5%;
-    }
 
-    .myArrow {
-      opacity: 0.8 !important;
-
-      svg {
-        fill: $liteblue !important;
+      .myArrow {
+        svg {
+          transform: rotate(-45deg);
+        }
       }
     }
 
-    &:hover {
-      backdrop-filter: blur(4px);
+    .myArrow {
+      opacity: 1 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
 
-      .myArrow {
-        opacity: 1 !important;
+      svg {
+        width: 44px;
+        height: 44px;
+        fill: $white !important;
+        pointer-events: none !important;
       }
     }
   }
@@ -89,44 +106,29 @@
     }
 
     .mtcaruselBtn {
-      backdrop-filter: blur(10px) !important;
-
-      .myArrow {
-        opacity: 1 !important;
-      }
+      width: 30px !important;
+      height: 30px !important;
 
       &:hover {
-        backdrop-filter: blur(10px) !important;
+        background-color: $liteblue !important;
+      }
 
-        .myArrow {
-          opacity: 1 !important;
+      &:nth-child(2) {
+        margin-left: 4% !important;
+      }
+
+      &:nth-child(3) {
+        margin-right: 4% !important;
+      }
+
+      .myArrow {
+        svg {
+          width: 36px !important;
+          height: 36px !important;
         }
       }
     }
   }
-}
-
-@media screen and (max-width: 890px) {
-  .mtcaruselBtn {
-    width: 40px !important;
-    height: 40px !important;
-
-    &:nth-child(2) {
-      margin-left: 3% !important;
-    }
-
-    &:nth-child(3) {
-      margin-right: 3% !important;
-    }
-
-    .myArrow {
-      svg {
-        width: 96% !important;
-        height: 96% !important;
-      }
-    }
-  }
-
 }
 
 @media screen and (max-width: 767px) {
