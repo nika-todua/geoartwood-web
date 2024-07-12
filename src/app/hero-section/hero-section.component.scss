@@ -42,7 +42,7 @@
     margin: auto;
     transform: rotate(45deg);
     background-color: $liteblue;
-    border-radius: 3px !important;
+    border-radius: 1px !important;
 
     transition: 0.1s linear;
     overflow: hidden;
@@ -50,6 +50,7 @@
     &:hover {
       background-color: #0b5ed7;
     }
+    
     span{
       pointer-events: none !important;
     }
