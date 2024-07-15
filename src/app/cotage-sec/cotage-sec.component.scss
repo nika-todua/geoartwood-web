@@ -7,32 +7,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.arrews{
-  width: fit-content;
-  height: 40px;
-  
-  div{
-    background-color: green;
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 40px;
 
-    &::after{
-      position: absolute !important;
-      opacity: 0 !important;
-      z-index: 88;
-    }
-    
-    svg{
-      display: block;
-      width: 30px;
-      height: 30px;
-      fill: $white;
-      pointer-events: none;
-    }
-  }
-}
 .cotage_inner {
   padding-top: 25px;
   padding-bottom: 70px;
@@ -45,7 +20,7 @@
   }
 
   .swiper {
-    margin: 63px auto 0 auto;
+    margin: 65px auto 0 auto;
     width: 97.8%;
     height: 500px;
     overflow: hidden;

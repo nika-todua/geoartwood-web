@@ -24,10 +24,6 @@ export class SaunaComponent {
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 10,
-      navigation: {
-        prevEl: ".swiper-button-prev",
-        nextEl: ".swiper-button-next",
-      },
       breakpoints: {
         480: {
           slidesPerView: 2,

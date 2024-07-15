@@ -36,18 +36,24 @@
     list-style-type: none;
 
     li {
+      position: relative;
       width: 30px;
       height: 30px;
-
+      display: flex;
+      align-items: center;
+      justify-content: center;
       a {
         width: 26px;
         height: 26px;
-
-        svg {
-          min-width: 26px;
-          min-height: 26px;
-          display: block;
-          fill: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        i{
+          display: flex;
+          font-family: initial !important;
+          font-size: 24px !important;
+          color: $white !important;
         }
       }
     }
@@ -97,6 +103,9 @@
             height: 100%;
             display: block;
             fill: $white;
+          }
+          i{
+            font-size: 20px !important;
           }
         }
       }
