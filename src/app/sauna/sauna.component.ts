@@ -1,5 +1,5 @@
-import Swiper from 'swiper';
 import { Component } from '@angular/core';
+import { Swiper } from 'swiper';
 
 @Component({
   selector: 'app-sauna',
@@ -21,7 +21,7 @@ export class SaunaComponent {
     
     this.shuffle(this.saunacaruselarr);
 
-    var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".mySwipersauna", {
       slidesPerView: 1,
       spaceBetween: 10,
       breakpoints: {
