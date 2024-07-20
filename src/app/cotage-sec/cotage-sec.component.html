@@ -1,12 +1,9 @@
 <section class="cotage_inner position-relative w-100">
   <h2 class="cotage_inner_title">კოტეჯები</h2>
   
-  <div class="swiper house-mySwiper-carusel rounded-3 d-flex justify-content-start align-items-center position-relative">
-    <div class="swiper-wrapper mycaruselcottage">
-      <div *ngFor="let data of caruselarr" class="d-flex justify-content-center align-item-center rounded-3 swiper-slide" style="color: aliceblue;">
-        <img [src]="data.img_big" class="w-100 d-block object-fit-cover" loading="lazy" [alt]="data.alt">
-      </div>
-    </div>
-  </div>
+  <swiper-container class="swiper mySwiper ounded-3 d-flex justify-content-start align-items-center position-relative"
+                    pagination="true" pagination-clickable="true" navigation="true" space-between="12.5" loop="false">
+    <swiper-slide *ngFor="let data of caruselarr" class="rounded-3" lazy="true"> <img [src]="data.img_big" loading="lazy" [alt]="data.alt"> </swiper-slide>
+  </swiper-container>
   
 </section>

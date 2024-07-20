@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Swiper } from 'swiper';
 
 @Component({
   selector: 'app-sauna',
@@ -17,33 +16,38 @@ export class SaunaComponent {
     return array;
   }
   
-  ngOnInit(){
+  ngOnInit(){  
+    window.addEventListener("resize", () => {
+      this.caruselviwes()
+    })
+    window.addEventListener("DOMContentLoaded", () => {
+      this.caruselviwes()
+    })
     
     this.shuffle(this.saunacaruselarr);
+  }
 
-    var swiper = new Swiper(".mySwipersauna", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      breakpoints: {
-        480: {
-          slidesPerView: 2,
-          spaceBetween: 12.5,
-        },
-        600: {
-          slidesPerView: 2,
-          spaceBetween: 15,
-        },
-        810: {
-          slidesPerView: 3,
-          spaceBetween: 25,
-        },
-        1200: {
-          slidesPerView: 4,
-          spaceBetween: 25,
-        }
-      },
-    });
-    
+  caruselviwes(){
+    if(window.innerWidth >= 480){
+      document.getElementById("saunaslider")!.setAttribute('slides-per-view', '2');
+      document.getElementById("saunaslider")!.setAttribute('space-between', '12.5');
+    }
+    if(window.innerWidth >= 600){
+      document.getElementById("saunaslider")!.setAttribute('slides-per-view', '2');
+      document.getElementById("saunaslider")!.setAttribute('space-between', '15');
+    }
+    if(window.innerWidth >= 810){
+      document.getElementById("saunaslider")!.setAttribute('slides-per-view', '3');
+      document.getElementById("saunaslider")!.setAttribute('space-between', '25');
+    }
+    if(window.innerWidth >= 1200){
+      document.getElementById("saunaslider")!.setAttribute('slides-per-view', '4');
+      document.getElementById("saunaslider")!.setAttribute('space-between', '25');
+    }
+    if(window.innerWidth < 480){
+      document.getElementById("saunaslider")!.setAttribute('slides-per-view', '1');
+      document.getElementById("saunaslider")!.setAttribute('space-between', '12.5');
+    }
   }
 
   saunacaruselarr = [

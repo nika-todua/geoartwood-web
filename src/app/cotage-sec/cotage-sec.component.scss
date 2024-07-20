@@ -8,6 +8,46 @@
   box-sizing: border-box;
 }
 
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  aspect-ratio: 4/5;
+  text-align: center;
+  font-size: 18px;
+  overflow: hidden;
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .cotage_inner {
   padding-top: 25px;
   padding-bottom: 70px;

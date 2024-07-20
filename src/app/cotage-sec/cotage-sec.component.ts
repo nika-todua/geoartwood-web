@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Swiper } from 'swiper';
 
 @Component({
   selector: 'app-cotage-sec',
@@ -7,7 +6,6 @@ import { Swiper } from 'swiper';
   styleUrl: './cotage-sec.component.scss'
 })
 export class CotageSecComponent {
-
   shuffle(array:any) {
     let currentIndex = array.length,  randomIndex;
     while (currentIndex > 0) {
@@ -18,35 +16,41 @@ export class CotageSecComponent {
     return array;
   }
   
-  ngOnInit(){
-    
+  
+  ngOnInit(){  
     this.shuffle(this.caruselarr);
-    
-    var swiper = new Swiper(".house-mySwiper-carusel", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      breakpoints: {
-        480: {
-          slidesPerView: 2,
-          spaceBetween: 12.5,
-        },
-        600: {
-          slidesPerView: 2,
-          spaceBetween: 15,
-        },
-        810: {
-          slidesPerView: 3,
-          spaceBetween: 25,
-        },
-        1200: {
-          slidesPerView: 4,
-          spaceBetween: 25,
-        }
-      },
-    });
 
+    window.addEventListener("resize", () => {
+      this.caruselviwes()
+    })
+    window.addEventListener("DOMContentLoaded", () => {
+      this.caruselviwes()
+    })
+    
   }
   
+  caruselviwes(){
+    if(window.innerWidth >= 480){
+      document.querySelector("swiper-container")!.setAttribute('slides-per-view', '2');
+      document.querySelector("swiper-container")!.setAttribute('space-between', '12.5');
+    }
+    if(window.innerWidth >= 600){
+      document.querySelector("swiper-container")!.setAttribute('slides-per-view', '2');
+      document.querySelector("swiper-container")!.setAttribute('space-between', '15');
+    }
+    if(window.innerWidth >= 810){
+      document.querySelector("swiper-container")!.setAttribute('slides-per-view', '3');
+      document.querySelector("swiper-container")!.setAttribute('space-between', '25');
+    }
+    if(window.innerWidth >= 1200){
+      document.querySelector("swiper-container")!.setAttribute('slides-per-view', '4');
+      document.querySelector("swiper-container")!.setAttribute('space-between', '25');
+    }
+    if(window.innerWidth < 480){
+      document.querySelector("swiper-container")!.setAttribute('slides-per-view', '1');
+      document.querySelector("swiper-container")!.setAttribute('space-between', '12.5');
+    }
+  }
   
   caruselarr = [
     {
