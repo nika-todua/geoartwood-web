@@ -7,46 +7,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  color: $white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  aspect-ratio: 4/5;
-  text-align: center;
-  font-size: 18px;
-  overflow: hidden;
-  cursor: grab;
-
-  &:active {
-    cursor: grabbing;
-  }
-
-  &:hover {
-    img {
-      transform: scale(1.1);
-    }
-  }
+.splide__pagination--ltr{
+  display: none !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
 }
-
-swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.5s ease;
-  user-select: none;
-}
-
-swiper-container {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .sauna_inner {
   padding-top: 25px;
   padding-bottom: 70px;
@@ -59,46 +24,61 @@ swiper-container {
   }
 }
 
-.swiper {
+.splide {
   position: relative;
   margin: 65px auto 0 auto;
   width: 97.8%;
   height: 500px;
   overflow: hidden;
 
-  .swiper-slide {
-    aspect-ratio: 4/5;
-    text-align: center;
-    font-size: 18px;
-    overflow: hidden;
-    cursor: grab;
+  .splide__track {
+    position: relative;
+    height: 100%;
+    display: flex;
 
-    &:active {
-      cursor: grabbing;
-    }
-
-    img {
+    .splide__list {
+      position: relative;
+      width: 100%;
       height: 100%;
-      transition: 0.5s ease;
-      user-select: none;
-    }
+      cursor: grab;
 
-    &:hover {
-      img {
-        transform: scale(1.1);
+      &:active {
+        cursor: grabbing;
+      }
+      .splide__slide {
+        position: relative;
+        overflow: hidden;
+
+
+        img {
+          aspect-ratio: 4/5;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          transition: 0.5s ease;
+          user-select: none;
+        }
+
+        &:hover {
+          img {
+            transform: scale(1.1);
+          }
+        }
       }
     }
   }
 }
 
 @media screen and (max-width: 1023px) {
-  .swiper {
-
-    &-slide {
-
-      &:hover {
-        img {
-          transform: scale(1);
+  .splide {
+    .splide__track {
+      .splide__list {
+        .splide__slide{
+          &:hover {
+            img {
+              transform: scale(1);
+            }
+          }
         }
       }
     }
@@ -106,17 +86,7 @@ swiper-container {
 }
 
 @media screen and (max-width: 859px) {
-  .swiper {
+  .splide {
     max-height: 435px !important;
-
-    &-slide {
-
-      &:hover {
-        img {
-          transform: scale(1);
-        }
-      }
-    }
   }
-
 }

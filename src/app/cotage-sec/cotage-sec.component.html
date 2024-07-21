@@ -1,9 +1,19 @@
 <section class="cotage_inner position-relative w-100">
   <h2 class="cotage_inner_title">კოტეჯები</h2>
-  
-  <swiper-container class="swiper mySwiper ounded-3 d-flex justify-content-start align-items-center position-relative"
-                    pagination="true" pagination-clickable="true" navigation="true" space-between="12.5" loop="false">
-    <swiper-slide *ngFor="let data of caruselarr" class="rounded-3" lazy="true"> <img [src]="data.img_big" loading="lazy" [alt]="data.alt"> </swiper-slide>
-  </swiper-container>
+
+  <section class="splide mysplider1" aria-labelledby="carousel-heading">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide rounded-3"> <img src="../../../assets/img/kotejebi/koteji1.webp" loading="lazy" alt=""> </li>
+        <li class="splide__slide rounded-3"> <img src="../../../assets/img/kotejebi/koteji2.webp" loading="lazy" alt=""> </li>
+        <li class="splide__slide rounded-3"> <img src="../../../assets/img/kotejebi/koteji3.webp" loading="lazy" alt=""> </li>
+        <li class="splide__slide rounded-3"> <img src="../../../assets/img/kotejebi/koteji4.webp" loading="lazy" alt=""> </li>
+        <li class="splide__slide rounded-3"> <img src="../../../assets/img/kotejebi/koteji5.jpg" loading="lazy" alt=""> </li>
+        <li class="splide__slide rounded-3"> <img src="../../../assets/img/kotejebi/u4YOdnFmSAW3fykeggTtjvZb8q1Zs5AczOC2MhFB.jpg" loading="lazy" alt=""> </li>
+        <li class="splide__slide rounded-3"> <img src="../../../assets/img/kotejebi/koteji6.jpg" loading="lazy" alt=""> </li>
+      </ul>
+      <ul class="splide__pagination"></ul>
+    </div>
+  </section>
   
 </section>
