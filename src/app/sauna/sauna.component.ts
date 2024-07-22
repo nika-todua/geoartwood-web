@@ -19,12 +19,12 @@ export class SaunaComponent {
           gap    : '25px',
           height : '500px',
         },
-        810: {
+        859: {
           perPage: 3,
           gap    : '15px',
           height : '500px',
         },
-        600: {
+        660: {
           perPage: 2,
           gap    : '15px',
           height : '500px',

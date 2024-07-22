@@ -1,6 +1,15 @@
 <section class="cotage_inner position-relative w-100">
   <h2 class="cotage_inner_title">კოტეჯები</h2>
 
+  <div class="myarrews">
+    <label for="Previous" class="myarrews-btn d-flex justify-content-center align-items-center rounded-0" type="button" style="color:#fff;">
+      <i class="bi bi-caret-left-fill"></i>
+    </label>
+    <label for="Next" class="myarrews-btn d-flex justify-content-center align-items-center rounded-0" type="button" style="color:#fff;">
+      <i class="bi bi-caret-right-fill"></i>
+    </label>
+  </div>
+
   <section class="splide mysplider1" aria-labelledby="carousel-heading">
     <div class="splide__track">
       <ul class="splide__list">
@@ -12,8 +21,12 @@
         <li class="splide__slide rounded-3"> <img src="../../../assets/img/kotejebi/u4YOdnFmSAW3fykeggTtjvZb8q1Zs5AczOC2MhFB.jpg" loading="lazy" alt=""> </li>
         <li class="splide__slide rounded-3"> <img src="../../../assets/img/kotejebi/koteji6.jpg" loading="lazy" alt=""> </li>
       </ul>
-      <ul class="splide__pagination"></ul>
     </div>
+    <div class="splide__arrows splide__arrows--ltr">
+      <button class="splide__arrow splide__arrow--prev d-none" id="Previous" type="button" aria-label="Previous slide" aria-controls="splide01-track"></button>
+      <button class="splide__arrow splide__arrow--next d-none" id="Next" type="button" aria-label="Next slide" aria-controls="splide01-track"></button>
+    </div>
+    <ul class="splide__pagination"></ul>
   </section>
   
 </section>

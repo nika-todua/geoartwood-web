@@ -1,6 +1,15 @@
 <section class="sauna_inner position-relative w-100">
   <h2 class="sauna_inner_title">საუნები</h2>
 
+  <div class="myarrews">
+    <label for="Previous-2847652" class="myarrews-btn d-flex justify-content-center align-items-center rounded-0" type="button" style="color:#fff;">
+      <i class="bi bi-caret-left-fill"></i>
+    </label>
+    <label for="Next-48483737" class="myarrews-btn d-flex justify-content-center align-items-center rounded-0" type="button" style="color:#fff;">
+      <i class="bi bi-caret-right-fill"></i>
+    </label>
+  </div>
+
   <section class="splide mysplider2" aria-labelledby="carousel-heading">
     <div class="splide__track">
       <ul class="splide__list">
@@ -23,8 +32,12 @@
         <li class="splide__slide rounded-3"> <img src="../../../assets/img/sauna/sauna17.jpeg" loading="lazy" alt="sauna 4"> </li>
         <li class="splide__slide rounded-3"> <img src="../../../assets/img/sauna/sauna18.jpg" loading="lazy" alt="sauna 4"> </li>
       </ul>
-      <ul class="splide__pagination"></ul>
     </div>
+    <div class="splide__arrows splide__arrows--ltr">
+      <button class="splide__arrow splide__arrow--prev d-none" id="Previous-2847652" type="button" aria-label="Previous slide" aria-controls="splide01-track"></button>
+      <button class="splide__arrow splide__arrow--next d-none" id="Next-48483737" type="button" aria-label="Next slide" aria-controls="splide01-track"></button>
+    </div>
+    <ul class="splide__pagination"></ul>
   </section>
   
 </section>

@@ -12,6 +12,24 @@
   pointer-events: none !important;
   visibility: hidden !important;
 }
+.myarrews{
+  position: absolute;
+  position: relative;
+  top: 28px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  .myarrews-btn{
+    width: 35px;
+    height: 35px;
+    background-color: $blue;
+    i{
+      margin-bottom: 1px;
+      font-size: 24px;
+    }
+  }
+}
 .cotage_inner {
   padding-top: 25px;
   padding-bottom: 70px;
@@ -27,7 +45,6 @@
     margin: 65px auto 0 auto;
     width: 100%;
     height: 500px;
-
     .splide__track {
       position: relative;
       height: 100%;
@@ -90,6 +107,11 @@
   .cotage_inner {
     .splide {
       max-height: 435px !important;
+      .splide__list {
+        .splide__slide{
+          max-height: 435px !important;
+        }
+      }
     }
   }
 }
