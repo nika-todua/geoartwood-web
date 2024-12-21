@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import Splide from '@splidejs/splide';
 
 @Component({
-  selector: 'app-cotage-sec',
-  templateUrl: './cotage-sec.component.html',
-  styleUrl: './cotage-sec.component.scss'
+    selector: 'app-cotage-sec',
+    templateUrl: './cotage-sec.component.html',
+    styleUrl: './cotage-sec.component.scss',
+    standalone: false
 })
 export class CotageSecComponent {
   ngOnInit(){

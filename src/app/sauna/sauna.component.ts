@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import Splide from '@splidejs/splide';
 
 @Component({
-  selector: 'app-sauna',
-  templateUrl: './sauna.component.html',
-  styleUrl: './sauna.component.scss'
+    selector: 'app-sauna',
+    templateUrl: './sauna.component.html',
+    styleUrl: './sauna.component.scss',
+    standalone: false
 })
 export class SaunaComponent {
   
